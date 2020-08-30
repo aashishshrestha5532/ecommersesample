@@ -1,0 +1,34 @@
+.breadcrumb {
+  background-color: #eeeeee;
+}
+
+.breadcrumb__row {
+  display: flex;
+  align-items: center;
+  margin-left: 20%;
+  height:40px;
+}
+
+.breadcrumb__row > ul {
+  display: flex;
+  flex: 1;
+}
+
+.breadcrumb__rowIcon {
+    text-decoration: none;
+    color: #000;
+}
+
+.breadcrumb__row > ul > li {
+ list-style: none;
+ display: flex;
+ align-items: center;
+}
+
+.breadcrumb__row > ul > li > label {
+  font-size: 14px;
+}
+
+.breadcrumb__row > ul >li > label:hover , .breadcrumb__lastItem{
+  color: #d68215;
+}

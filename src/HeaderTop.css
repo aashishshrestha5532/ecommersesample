@@ -1,0 +1,48 @@
+.headertop {
+    display: flex;
+    flex:1;
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+}
+.headertop-fill {
+    display: flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    padding:5px 0px 5px 0px;
+    margin-left: 20.5%;
+    margin-right: 20%;
+    justify-content: space-between;
+}
+
+.headertop__contacts {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.headertop__contactIcon {
+    height: 25px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.headertop__contactNumber {
+    margin: 0px 15px 0px 15px;
+    color: #d68215;
+    display: flex;
+    font-size: 0.75rem;
+    align-items: center;
+}
+
+.headertop__links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.headertop__link {
+    margin: 0px 15px 0px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 0.75rem;
+}

@@ -9,8 +9,8 @@ This is a e-commerse template for react which can be really a kickstart if you a
 3. Cart Handling
 4. Grid/List view of the products
 5. Sass implementation
-6. Custom sliders,carousel,arrows implemented using react-slick
-
+6. Custom Hero sliders,carousel,arrows implemented using react-slick
+7. Non-static navbar items (Dynamic navbar contents)
 
 
 ### How to install
@@ -22,11 +22,12 @@ This is a e-commerse template for react which can be really a kickstart if you a
     
     For npm
     `npm install`
-3. Once you are done with step 2, You are ready to go.Enter the following command to start the project
+3. Once you are done with step 2, You are ready to go.
+4. Enter the following command to start the project
 
-  For yarn
-  `yarn start`
-  
-  For npm
-  
-  `npm start`
+      ### For yarn
+      `yarn start`
+      
+      ### For npm
+      
+      `npm start`

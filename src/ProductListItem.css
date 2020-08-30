@@ -1,0 +1,33 @@
+.product--type-list {
+  display: flex;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.product--type-list > img {
+  height: 160px;
+  width: 160px;
+  object-fit: contain;
+  transition: 0.3s transform;
+}
+
+.product--type-list > img:hover {
+  transform: scale(1.08);
+}
+
+.product--type-list__info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.product--type-list__title {
+  font-size: 15px;
+}
+
+.product--type-list__price {
+  font-weight: bold;
+  margin-top: 10px;
+}

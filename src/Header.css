@@ -1,0 +1,106 @@
+.header {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height:70px;
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e0e0e0;
+  padding: 15px;
+}
+
+.header__logo {
+  height: 3rem;
+  object-fit: contain;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 18px;
+}
+
+.header__search {
+  display: flex;
+  width: 600px;
+  flex-direction: row;
+  align-items: center;
+  margin: 0px 60px 0px 50px;
+}
+
+.header__searchInput {
+  padding: 13px;
+  flex: 1;
+  background-color: #f7f7f7;
+  border: 1px solid #eeeeee;
+  color: #777777;
+  outline: 0;
+  outline-offset: 0px;
+  border-radius: 0;
+  border: none;
+  width: 100%;
+}
+
+.header__searchIcon {
+  background-color: #d68215;
+  color: white;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.header__links {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header__link {
+  text-decoration: none;
+  color: black;
+}
+
+.header__wishlist {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header__wishlistIcon {
+  margin-right: 5px;
+}
+
+.header__cart {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.header__cartIcon {
+  margin-right: 5px;
+}
+
+.header__cartBadge {
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  border-radius: 12.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d68215;
+  color: white;
+  position: absolute;
+  top: -5px;
+  right: -20px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .header__logo {
+        height:30px;
+      }
+}
