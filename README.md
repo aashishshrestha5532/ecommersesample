@@ -2,6 +2,23 @@
 
 This is a e-commerse template for react which can be really a kickstart if you are willing to do e-commerse related projects.
 
+
+### ScreenShots
+1. ### Home page
+![Home page](./s1.png)
+
+2. ### Products page (Grid View)
+![Product page](./s2.png)
+
+3. ### Products page (List View)
+![Product page](./s5.png)
+
+4. ### Detail page
+![Detail page](./s3.png)
+
+5. ### Cart page
+![Cart page](./s4.png)
+
 ### Features
 
 1. State Management using React Hooks(without using redux)
@@ -31,3 +48,6 @@ This is a e-commerse template for react which can be really a kickstart if you a
       ### For npm
       
       `npm start`
+
+
+
