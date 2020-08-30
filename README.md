@@ -7,27 +7,35 @@ This is a e-commerse template for react which can be really a kickstart if you a
 1. ### Home page
 ![Home page](./s1.png)
 
-2. ### Products page (Grid View)
+2. ### Navbar Content
+![Navbar content](./s6.png)
+
+3. ### Products page (Grid View)
 ![Product page](./s2.png)
 
-3. ### Products page (List View)
+5. ### Products page (List View)
 ![Product page](./s5.png)
 
-4. ### Detail page
+5. ### Detail page
 ![Detail page](./s3.png)
 
-5. ### Cart page
+6. ### Cart page
 ![Cart page](./s4.png)
 
 ### Features
 
-1. State Management using React Hooks(without using redux)
-2. Custom Route which always make sure your page will not clip when the route is changed
-3. Cart Handling
-4. Grid/List view of the products
-5. Sass implementation
-6. Custom Hero sliders,carousel,arrows implemented using react-slick
-7. Non-static navbar items (Dynamic navbar contents)
+1. ✅ State Management using React Hooks
+2. ✅ Custom Route which always make sure your page will not clip when the route is changed.
+3. ✅ Cart Handling
+4. ✅ Grid/List view of the products
+5. ✅ Sass implementation
+6. ✅ Custom Hero sliders,carousel,arrows implemented using react-slick
+7. ✅ Non-static navbar items (Dynamic navbar contents)
+8. ✅ Used Mock data
+9. ❌ Responsive
+10. ❌ Third party UI libraries used for desigining
+11. ❌ Integration with API
+12. ❌ Redux
 
 
 ### How to install
@@ -51,3 +59,4 @@ This is a e-commerse template for react which can be really a kickstart if you a
 
 
 
+### Note: This is just a template not a full fledge e-commerse site.
