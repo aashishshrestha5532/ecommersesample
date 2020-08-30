@@ -22,7 +22,7 @@ let settings = {
   infinite: false,
   speed: 500,
   slidestoShow: 1,
-  initialSlide: 1,
+  initialSlide: 0,
   nextArrow: <NextArrow />,
   prevArrow: <PrevArrow />,
 };
@@ -30,8 +30,8 @@ let settings = {
 const Banner = ({ data }) => {
   return (
     <div className="banner">
-      <Slider {...settings} className="productList__row">
-        {data.map((item, index) => (
+      <Slider {...settings} className="banner__row">
+        {data?.map((item, index) => (
           <img key={index} src={item.url} className="banner__image" alt={""} />
         ))}
       </Slider>

@@ -29,5 +29,9 @@
 
 .product--type-list__price {
   font-weight: bold;
+  margin: 10px 0px;
+}
+
+.product--type-list__rating {
   margin-top: 10px;
 }

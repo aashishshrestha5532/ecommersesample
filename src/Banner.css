@@ -9,6 +9,10 @@
   height: 100%;
 }
 
+.banner__row {
+  display: flex;
+  flex-direction: row;
+}
 
 .banner__nextArrow {
   position: absolute;

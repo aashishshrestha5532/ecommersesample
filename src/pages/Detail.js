@@ -15,15 +15,36 @@ import {
 import RatingBar from "../RatingBar";
 
 export default function Detail({ match }) {
+  const [isRendered, setIsRendered] = useState(false);
   const [data, setData] = useState({});
   const [similarProducts, setSimilarProducts] = useState([]);
   const [sameSellerProducts, setSameSellerProducts] = useState([]);
   useEffect(() => {
     // extract the slug
     let slug = match.params.slug;
-    setData(getProductDetail(slug));
-    setSameSellerProducts(getProductsBySameSeller());
-    setSimilarProducts(getSimilarProducts());
+    let i = 0; // counter to check the atomic fetch
+    getProductDetail(slug).then((response) => {
+      setData(response);
+      i++;
+      if (i === 3) {
+        setIsRendered(true);
+      }
+    });
+    getProductsBySameSeller().then((response) => {
+      setSameSellerProducts(response);
+      i++;
+      if (i === 3) {
+        setIsRendered(true);
+      }
+    });
+
+    getSimilarProducts().then((response) => {
+      setSimilarProducts(response);
+      i++;
+      if (i === 3) {
+        setIsRendered(true);
+      }
+    });
   }, [match]);
 
   const [, dispatch] = useStateValue();
@@ -54,6 +75,10 @@ export default function Detail({ match }) {
   };
 
   const handleAddToWishlist = () => {};
+  if (!isRendered) {
+    // Use any type of progress indicator you want
+    return <h3 style={{ textAlign: "center", minHeight: 250 }}>Loading...</h3>;
+  }
 
   return (
     <div className="detail">

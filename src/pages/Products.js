@@ -200,6 +200,7 @@ const Products = ({ match }) => {
                     name={product.name}
                     image={product.image}
                     price={product.price}
+                    rating={product.rating}
                   />
                 ) : (
                   <ProductG
@@ -207,6 +208,7 @@ const Products = ({ match }) => {
                     name={product.name}
                     image={product.image}
                     price={product.price}
+                    rating={product.rating}
                   />
                 )}
               </div>

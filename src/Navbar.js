@@ -6,7 +6,7 @@ import { getNavData } from "./api";
 
 export default function Navbar() {
   const [show, handleShow] = useState(false);
-  const [data, setData] = useState();
+  const [data, setData] = useState([]);
 
   const handleScrollListener = () => {
     window.addEventListener("scroll", () => {
@@ -19,10 +19,13 @@ export default function Navbar() {
   };
 
   useEffect(() => {
-    setData(getNavData());
-     handleScrollListener();
+    handleScrollListener();
+    getNavData().then(response => {
+      setData(response);
+    });
+
     return () => {
-      window.removeEventListener("scroll");
+      window.removeEventListener("scroll")
     };
   }, []);
   return (

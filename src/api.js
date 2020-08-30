@@ -1,14 +1,14 @@
 /*mock api to manipulate the data */
 
 import data,{banner_data,nav_data} from "./data";
-
+const timeInterval = 2500 // for response
 export const getBannerData = () => {
   // all the image credit goes to gyapu.com  
-  return banner_data
+  return new Promise((resolve,reject) => setTimeout(resolve(banner_data),timeInterval))
 };
 
 export const getNavData = () => {
-    return nav_data
+  return new Promise((resolve,reject) => setTimeout(resolve(nav_data),timeInterval))
 }
 
 export const getAllProducts = () => {
@@ -25,7 +25,7 @@ export const getAllProducts = () => {
 };
 
 export const getTrendingProducts = () => {
-  return data.map((item) => {
+  let new_data = data.map((item) => {
     return {
       id: item.id,
       name: item.name,
@@ -35,10 +35,12 @@ export const getTrendingProducts = () => {
       slug: item.slug,
     };
   });
+
+  return new Promise((resolve,reject) => setTimeout(resolve(new_data),timeInterval))
 };
 
 export const getSimilarProducts = () => {
-  return data.slice(0, 5).map((item) => {
+  let new_data = data.slice(0, 5).map((item) => {
     return {
       id: item.id,
       name: item.name,
@@ -48,10 +50,11 @@ export const getSimilarProducts = () => {
       slug: item.slug,
     };
   });
+  return new Promise((resolve,reject) => setTimeout(resolve(new_data),timeInterval))
 };
 
 export const getProductsBySameSeller = () => {
-  return data.slice(0, 5).map((item) => {
+  let new_data = data.slice(0, 5).map((item) => {
     return {
       id: item.id,
       name: item.name,
@@ -61,10 +64,12 @@ export const getProductsBySameSeller = () => {
       slug: item.slug,
     };
   });
+  return new Promise((resolve,reject) => setTimeout(resolve(new_data),timeInterval))
 };
 
 export const getProductDetail = (slug) => {
-  return data.find((item) => item.slug === slug);
+  let new_data = data.find((item) => item.slug === slug);
+  return new Promise((resolve,reject) => setTimeout(resolve(new_data),timeInterval))
 };
 
 export const getProductsByPriceRange = (min, max) => {
