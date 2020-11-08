@@ -317,13 +317,13 @@ export const nav_data = [
     children: [],
   },
   {
-    name:"Home & LifeStyles",
+    name: "Home & LifeStyles",
     slug: "home-lifestyles",
     children: [],
   },
   {
-    name:"More",
+    name: "More",
     slug: "more",
     children: [],
-  }
+  },
 ];

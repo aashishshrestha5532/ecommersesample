@@ -44,6 +44,8 @@ let settings = {
 };
 
 const ProductList = ({ title, data ,styles}) => {
+  if(!data) return null;
+
   return (
       <div className='productList' style={styles}>
         <h2 className="productList__title"> {title}</h2>

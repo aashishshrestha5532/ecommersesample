@@ -12,7 +12,7 @@ export default function HeaderTop() {
               className="headertop__contactIcon"
               alt=""
             />
-            977-9804155451 / 061524671
+            977-98041XXXXX / 061XXXXXX
           </div>
           <div className="headertop__contactNumber">
             <img
@@ -20,7 +20,7 @@ export default function HeaderTop() {
               className="headertop__contactIcon"
               alt=""
             />{" "}
-            9805895454
+            98058XXXXX
           </div>
         </div>
         <div className="headertop__links">

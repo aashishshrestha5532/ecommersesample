@@ -35,7 +35,7 @@ const Header = () => {
         <SearchIcon className="header__searchIcon" />
       </div>
       <div className="header__links">
-        <Link className="header__link">
+        <Link className="header__link" to="#">
           <div className="header__wishlist">
             <WishlistIcon className="header__wishlistIcon" />
             <label style={{ fontSize: 14 }}>Wishlist</label>

@@ -20,12 +20,12 @@ export default function Navbar() {
 
   useEffect(() => {
     handleScrollListener();
-    getNavData().then(response => {
+    getNavData().then((response) => {
       setData(response);
     });
 
     return () => {
-      window.removeEventListener("scroll")
+      window.removeEventListener("scroll");
     };
   }, []);
   return (
@@ -71,7 +71,10 @@ export default function Navbar() {
             )}
           </li>
         ))}
-        {/* <li>
+      </ul>
+    </nav>
+    // Following code for static nav content
+    /* <nav><li>
           <Link className="navbar__link" to="#">
             G-Bar
           </Link>
@@ -147,8 +150,6 @@ export default function Navbar() {
         </li>
         <li>
           <Link className="navbar__link">More</Link>
-        </li> */}
-      </ul>
-    </nav>
+        </li></nav> */
   );
 }

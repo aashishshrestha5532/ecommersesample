@@ -28,6 +28,7 @@ let settings = {
 };
 
 const Banner = ({ data }) => {
+  if(!data) return null;
   return (
     <div className="banner">
       <Slider {...settings} className="banner__row">
